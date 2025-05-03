@@ -1,0 +1,33 @@
+[
+  {
+    "usuario": "NOMBRE_USUARIO",
+    "origen": "CIUDAD_ORIGEN",
+    "vibes": [
+      "Fiesta",
+      "Naturaleza",
+      "Cultura"
+    ]
+  },
+  {
+    "usuario": "jfhdfd",
+    "origen": "Federal Capital Territory",
+    "vibes": [
+      "Fiesta",
+      "Naturaleza",
+      "Cultura",
+      "Playa",
+      "Comida"
+    ]
+  },
+  {
+    "usuario": "jfhdfd",
+    "origen": "Federal Capital Territory",
+    "vibes": [
+      "Fiesta",
+      "Naturaleza",
+      "Cultura",
+      "Playa",
+      "Comida"
+    ]
+  }
+]
