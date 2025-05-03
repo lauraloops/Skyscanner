@@ -22,6 +22,16 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
   const [myOrigin, setMyOrigin] = useState('');
   const [myVibes, setMyVibes] = useState([]);
   const [misVibesNombres, setMisVibesNombres] = useState([]);
+  // Hook para enviar datos solo una vez cuando estén listos
+  const [enviado, setEnviado] = React.useState(false);
+  React.useEffect(() => {
+    if (!enviado && name && origins[name] && Array.isArray(vibes[name]) && vibes[name].length > 0) {
+      guardarUsuario(name, origins[name], vibes[name]);
+      setEnviado(true);
+    }
+    // Solo se envía una vez al montar la pantalla
+    // eslint-disable-next-line
+  }, [name, origins, vibes, enviado]);
 
   // Simulate join (no backend, just local)
   const handleJoin = () => {

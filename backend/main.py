@@ -57,4 +57,3 @@ async def guardar_usuario(usuarios: Union[UsuarioVibes, List[UsuarioVibes]] = Bo
     except Exception as e:
         return {"ok": False, "error": str(e)}
 
-
