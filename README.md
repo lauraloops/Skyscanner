@@ -1,3 +1,2 @@
 # SkyScanner
 
-# Skyscanner
