@@ -1,0 +1,12 @@
+[
+  {"id":128668435,"IATA":"ELS","name":"East London","latitude":-33.036111,"longitude":27.823889},
+  {"id":129054589,"IATA":"GON","name":"Groton-New London","latitude":41.328889,"longitude":-72.046389},
+  {"id":95565047,"IATA":"LCY","name":"London City","latitude":51.503753,"longitude":0.048512},
+  {"id":95565051,"IATA":"LGW","name":"London Gatwick","latitude":51.148056,"longitude":-0.196667},
+  {"id":95565050,"IATA":"LHR","name":"London Heathrow","latitude":51.471389,"longitude":-0.452778},
+  {"id":129057988,"IATA":"LOZ","name":"Corbin-London","latitude":37.087222,"longitude":-84.076944},
+  {"id":95565053,"IATA":"LTN","name":"London Luton","latitude":51.878704,"longitude":-0.375705},
+  {"id":95565054,"IATA":"SEN","name":"London Southend","latitude":51.5701698,"longitude":0.6922722},
+  {"id":95565052,"IATA":"STN","name":"London Stansted","latitude":51.883333,"longitude":0.233333},
+  {"id":95673743,"IATA":"YXU","name":"London","latitude":43.04,"longitude":-81.15}
+]
