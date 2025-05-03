@@ -1,3 +1,10 @@
+@keyframes markerSelectedAnim {
+  0% {
+    color: #312e81;
+    filter: drop-shadow(0 0 0 #22c55e);
+    transform: scale(1);
+  }
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;

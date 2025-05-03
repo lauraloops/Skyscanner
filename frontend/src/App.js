@@ -3,11 +3,13 @@ import React from 'react';
 import './App.css';
 import plane from './plane.png';
 import MapaAmigos from './MapaAmigos';
+import AmigosGrupo from './AmigosGrupo';
 
 function App() {
   const [mode, setMode] = React.useState(null);
   const [numAmigos, setNumAmigos] = React.useState(2);
   const [amigosConfirmado, setAmigosConfirmado] = React.useState(false);
+  const [showMapaAmigos, setShowMapaAmigos] = React.useState(false);
 
   return (
     <>
@@ -106,11 +108,18 @@ function App() {
               </button>
             </div>
           ) : (
-            <div style={{ marginTop: '32px', color: '#e6f7ff', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <h3 style={{ textAlign: 'center', marginBottom: '8px' }}>¡Perfecto! Sois {numAmigos} personas.</h3>
-              <p style={{ marginBottom: '18px', textAlign: 'center' }}>Selecciona en el mapa el área de interés o visualiza el punto de encuentro.</p>
-              <MapaAmigos />
-            </div>
+            !showMapaAmigos ? (
+              <AmigosGrupo
+                numAmigos={numAmigos}
+                onAllJoined={(_participantes) => setShowMapaAmigos(true)}
+              />
+            ) : (
+              <div style={{ marginTop: '-20px', color: '#e6f7ff', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <h3 style={{ textAlign: 'center', marginBottom: '0px', }}>¡Perfecto! Sois {numAmigos} personas.</h3>
+                <p style={{ marginBottom: '18px', textAlign: 'center' }}>Selecciona en el mapa el área de interés o visualiza el punto de encuentro.</p>
+                <MapaAmigos />
+              </div>
+            )
           )}
         </div>
       )}
