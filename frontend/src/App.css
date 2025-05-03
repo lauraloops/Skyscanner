@@ -1,11 +1,18 @@
+@keyframes markerSelectedAnim {
+  0% {
+    color: #312e81;
+    filter: drop-shadow(0 0 0 #22c55e);
+    transform: scale(1);
+  }
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #1a2636 0%, #23344a 100%);
 }
 
 .skyscanner-bg {
-  background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #1a2636 0%, #23344a 100%);
 }
 
 .container {
@@ -19,81 +26,172 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60vw;
-  height: 60vh;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   border-radius: 30px;
-  overflow: hidden;
-  background: rgba(255,255,255,0.95);
+  overflow: visible;
+  background: rgba(34, 48, 70, 0.98);
   position: relative;
 }
 
+.plane-square-orbit {
+  position: fixed;
+  left: 5;
+  top: 5;
+  width: 95vw;
+  height: 95vh;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.plane-img-square {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  animation: square-orbit 8s linear infinite;
+  z-index: 2;
+  filter: drop-shadow(0 0 16px #00aaff88);
+}
+
+@keyframes square-orbit {
+  /* Calcula la proporción de cada lado */
+  /* horizontal: h, vertical: v, perimetro: 2h+2v */
+  /* %h = h/(2h+2v), %v = v/(2h+2v) */
+  /* Usamos 95vw y 95vh menos 80px del avión */
+  /* Calcula en px para que sea responsivo */
+  /* Calcula la proporción real de cada lado */
+  /* horizontal: h = 95vw - 80px, vertical: v = 95vh - 80px */
+  /* perimetro = 2h + 2v */
+  /* %h = h/perimetro, %v = v/perimetro */
+  /* Para pantallas 16:9, h ≈ 1744px, v ≈ 944px, perimetro ≈ 5376px */
+  /* %h ≈ 32.4%, %v ≈ 17.6% */
+  0% { left: 0%; top: 0%; transform: rotate(90deg); } /* derecha */
+  32.4% { left: calc(100% - 80px); top: 0%; transform: rotate(90deg); } /* derecha */
+  32.5% { left: calc(100% - 80px); top: 0%; transform: rotate(180deg); } /* abajo */
+  50% { left: calc(100% - 80px); top: calc(100% - 80px); transform: rotate(180deg); } /* abajo */
+  50.1% { left: calc(100% - 80px); top: calc(100% - 80px); transform: rotate(270deg); } /* izquierda */
+  82.5% { left: 0%; top: calc(100% - 80px); transform: rotate(270deg); } /* izquierda */
+  82.6% { left: 0%; top: calc(100% - 80px); transform: rotate(360deg); } /* arriba */
+  100% { left: 0%; top: 0%; transform: rotate(360deg); } /* arriba */
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: auto;
+  z-index: 3;
+}
+
+
+
 .left-btn, .right-btn {
-  flex: 1;
   font-size: 2.2rem;
   border: none;
   outline: none;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  margin: 0 30px;
-  border-radius: 18px;
-  padding: 40px 0;
-  box-shadow: 0 2px 12px rgba(0,170,255,0.08);
-}
-
-.left-btn {
-  background: linear-gradient(135deg, #00aaff 60%, #e6f7ff 100%);
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s, transform 0.15s, box-shadow 0.15s;
+  border-radius: 22px;
+  padding: 44px 70px;
+  box-shadow: 0 6px 32px 0 rgba(0,170,255,0.18), 0 2px 12px rgba(0,34,51,0.12);
+  background: linear-gradient(135deg, #00aaff 0%, #22304a 100%);
   color: #fff;
-  border: 2px solid #00aaff;
-}
-
-.right-btn {
-  background: linear-gradient(135deg, #fff 60%, #00aaff 100%);
-  color: #00aaff;
-  border: 2px solid #00aaff;
+  border: none;
+  position: relative;
+  overflow: visible;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-sizing: border-box;
+  filter: none;
 }
 
 .left-btn:hover, .right-btn:hover {
-  box-shadow: 0 4px 24px rgba(0,170,255,0.18);
-  background: #e6f7ff;
-  color: #005f99;
+  box-shadow: 0 8px 36px 0 rgba(0,170,255,0.28), 0 4px 24px rgba(0,170,255,0.18), 0 0 0 4px #00eaff55;
+  background: linear-gradient(135deg, #00eaff 0%, #0077b6 100%);
+  color: #fff;
+  transform: scale(1.04) translateY(-2px);
+  border-color: #00eaff;
+  outline: none;
+}
+
+.left-btn:focus-visible, .right-btn:focus-visible {
+  outline: 3px solid #00eaff;
+  outline-offset: 2px;
+}
+
+.left-btn:hover, .right-btn:hover {
+  box-shadow: 0 8px 36px 0 rgba(0,170,255,0.28), 0 4px 24px rgba(0,170,255,0.18);
+  background: linear-gradient(135deg, #00eaff 0%, #0077b6 100%);
+  color: #fff;
+  transform: scale(1.04) translateY(-2px);
+  border-color: #00eaff;
 }
 
 .full-screen {
   width: 60vw;
   height: 60vh;
-  background: white;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  background: #22304a;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #e6f7ff;
 }
 
-/* Avión orbitando */
-.plane-orbit {
+/* Avión orbitando alrededor de los botones */
+.plane-orbit-btn {
   position: absolute;
-  left: -60px;
   top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
   pointer-events: none;
-  z-index: 2;
-  animation: orbit 3s linear infinite;
+  z-index: 10;
+  animation: orbit-btn 8s linear infinite;
 }
-.plane-orbit-right {
-  left: auto;
-  right: -60px;
+.plane-orbit-btn-right {
   animation-direction: reverse;
 }
 .plane-img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
-@keyframes orbit {
-  0% { transform: translateY(-50%) rotate(0deg) scale(1); }
-  50% { transform: translateY(-60%) rotate(180deg) scale(1.1); }
-  100% { transform: translateY(-50%) rotate(360deg) scale(1); }
+.plane-img-small {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: orbit-btn-inner 2.5s linear infinite;
+}
+.plane-orbit-btn-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  pointer-events: none;
+  z-index: 2;
+  animation: orbit-btn-inner 2.5s linear infinite;
+}
+.plane-orbit-btn-inner-right {
+  animation-direction: reverse;
+}
+@keyframes orbit-btn {
+  0% { transform: rotate(0deg) translateY(-90px) scale(1); }
+  50% { transform: rotate(180deg) translateY(-90px) scale(1.1); }
+  100% { transform: rotate(360deg) translateY(-90px) scale(1); }
+}
+@keyframes orbit-btn-inner {
+  0% { transform: translateX(-50%) rotate(0deg) translateY(-30px) scale(1); }
+  50% { transform: translateX(-50%) rotate(180deg) translateY(-30px) scale(1.1); }
+  100% { transform: translateX(-50%) rotate(360deg) translateY(-30px) scale(1); }
 }

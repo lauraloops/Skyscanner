@@ -1,0 +1,1424 @@
+{
+  "France": {
+    "lat": -17.35542961176671,
+    "lon": -145.50941496626925,
+    "ciudades": {
+      "Anaa": {
+        "lat": -17.35542961176671,
+        "lon": -145.50941496626925,
+        "aeropuertos": [
+          {
+            "IATA": "AAA",
+            "name": "Anaa",
+            "latitude": -17.35542961176671,
+            "longitude": -145.50941496626925
+          }
+        ]
+      }
+    }
+  },
+  "Australia": {
+    "lat": -26.7,
+    "lon": 141.041667,
+    "ciudades": {
+      "Queensland": {
+        "lat": -26.7,
+        "lon": 141.041667,
+        "aeropuertos": [
+          {
+            "IATA": "AAB",
+            "name": "Arrabury",
+            "latitude": -26.7,
+            "longitude": 141.041667
+          },
+          {
+            "IATA": "ABG",
+            "name": "Abingdon",
+            "latitude": -17.666667,
+            "longitude": 143.2
+          },
+          {
+            "IATA": "ABH",
+            "name": "Alpha",
+            "latitude": -23.65,
+            "longitude": 146.633333
+          },
+          {
+            "IATA": "ABM",
+            "name": "Bamaga",
+            "latitude": -10.866667,
+            "longitude": 142.4
+          }
+        ]
+      },
+      "Victoria": {
+        "lat": -36.068333,
+        "lon": 146.976667,
+        "aeropuertos": [
+          {
+            "IATA": "ABX",
+            "name": "Albury",
+            "latitude": -36.068333,
+            "longitude": 146.976667
+          }
+        ]
+      },
+      "Adelaide": {
+        "lat": -34.948333,
+        "lon": 138.534722,
+        "aeropuertos": [
+          {
+            "IATA": "ADL",
+            "name": "Adelaide",
+            "latitude": -34.948333,
+            "longitude": 138.534722
+          }
+        ]
+      },
+      "Oak Dam Village": {
+        "lat": -31.016667,
+        "lon": 137.15,
+        "aeropuertos": [
+          {
+            "IATA": "ADO",
+            "name": "Andamooka",
+            "latitude": -31.016667,
+            "longitude": 137.15
+          }
+        ]
+      }
+    }
+  },
+  "Somalia": {
+    "lat": 6.095833,
+    "lon": 46.6375,
+    "ciudades": {
+      "Galgaduud": {
+        "lat": 6.095833,
+        "lon": 46.6375,
+        "aeropuertos": [
+          {
+            "IATA": "AAD",
+            "name": "Adado",
+            "latitude": 6.095833,
+            "longitude": 46.6375
+          }
+        ]
+      }
+    }
+  },
+  "Algeria": {
+    "lat": 36.821667,
+    "lon": 7.81,
+    "ciudades": {
+      "Echatt": {
+        "lat": 36.821667,
+        "lon": 7.81,
+        "aeropuertos": [
+          {
+            "IATA": "AAE",
+            "name": "Annaba",
+            "latitude": 36.821667,
+            "longitude": 7.81
+          }
+        ]
+      }
+    }
+  },
+  "United States": {
+    "lat": 29.72938,
+    "lon": -85.0288,
+    "ciudades": {
+      "Florida": {
+        "lat": 29.72938,
+        "lon": -85.0288,
+        "aeropuertos": [
+          {
+            "IATA": "AAF",
+            "name": "Apalachicola",
+            "latitude": 29.72938,
+            "longitude": -85.0288
+          }
+        ]
+      },
+      "East Allen Township": {
+        "lat": 40.654722,
+        "lon": -75.438333,
+        "aeropuertos": [
+          {
+            "IATA": "ABE",
+            "name": "Allentown",
+            "latitude": 40.654722,
+            "longitude": -75.438333
+          }
+        ]
+      },
+      "Abilene": {
+        "lat": 32.409444,
+        "lon": -99.679722,
+        "aeropuertos": [
+          {
+            "IATA": "ABI",
+            "name": "Abilene Municipal",
+            "latitude": 32.409444,
+            "longitude": -99.679722
+          }
+        ]
+      },
+      "Ambler": {
+        "lat": 67.0875,
+        "lon": -157.845833,
+        "aeropuertos": [
+          {
+            "IATA": "ABL",
+            "name": "Ambler",
+            "latitude": 67.0875,
+            "longitude": -157.845833
+          }
+        ]
+      },
+      "Albuquerque": {
+        "lat": 35.042084,
+        "lon": -106.609268,
+        "aeropuertos": [
+          {
+            "IATA": "ABQ",
+            "name": "Albuquerque",
+            "latitude": 35.042084,
+            "longitude": -106.609268
+          }
+        ]
+      },
+      "South Dakota": {
+        "lat": 45.4525,
+        "lon": -98.426111,
+        "aeropuertos": [
+          {
+            "IATA": "ABR",
+            "name": "Aberdeen",
+            "latitude": 45.4525,
+            "longitude": -98.426111
+          }
+        ]
+      },
+      "Georgia": {
+        "lat": 31.532222,
+        "lon": -84.196111,
+        "aeropuertos": [
+          {
+            "IATA": "ABY",
+            "name": "Albany Dougherty County",
+            "latitude": 31.532222,
+            "longitude": -84.196111
+          }
+        ]
+      },
+      "Michigan": {
+        "lat": 44.983333,
+        "lon": -85.216667,
+        "aeropuertos": [
+          {
+            "IATA": "ACB",
+            "name": "Bellaire",
+            "latitude": 44.983333,
+            "longitude": -85.216667
+          },
+          {
+            "IATA": "ADG",
+            "name": "Adrian",
+            "latitude": 41.86921,
+            "longitude": -84.07467
+          }
+        ]
+      },
+      "Nantucket": {
+        "lat": 41.256667,
+        "lon": -70.059722,
+        "aeropuertos": [
+          {
+            "IATA": "ACK",
+            "name": "Nantucket",
+            "latitude": 41.256667,
+            "longitude": -70.059722
+          }
+        ]
+      },
+      "Waco": {
+        "lat": 31.607778,
+        "lon": -97.230278,
+        "aeropuertos": [
+          {
+            "IATA": "ACT",
+            "name": "Waco Municipal",
+            "latitude": 31.607778,
+            "longitude": -97.230278
+          }
+        ]
+      },
+      "California": {
+        "lat": 40.979167,
+        "lon": -124.1075,
+        "aeropuertos": [
+          {
+            "IATA": "ACV",
+            "name": "Arcata",
+            "latitude": 40.979167,
+            "longitude": -124.1075
+          }
+        ]
+      },
+      "Egg Harbor Township": {
+        "lat": 39.45,
+        "lon": -74.583333,
+        "aeropuertos": [
+          {
+            "IATA": "ACY",
+            "name": "Atlantic City International",
+            "latitude": 39.45,
+            "longitude": -74.583333
+          }
+        ]
+      },
+      "Adak": {
+        "lat": 51.882778,
+        "lon": -176.644722,
+        "aeropuertos": [
+          {
+            "IATA": "ADK",
+            "name": "Adak Island",
+            "latitude": 51.882778,
+            "longitude": -176.644722
+          }
+        ]
+      },
+      "Ardmore": {
+        "lat": 34.303056,
+        "lon": -97.019444,
+        "aeropuertos": [
+          {
+            "IATA": "ADM",
+            "name": "Ardmore Municipal Arpt",
+            "latitude": 34.303056,
+            "longitude": -97.019444
+          }
+        ]
+      },
+      "Alaska": {
+        "lat": 57.754167,
+        "lon": -152.483333,
+        "aeropuertos": [
+          {
+            "IATA": "ADQ",
+            "name": "Kodiak",
+            "latitude": 57.754167,
+            "longitude": -152.483333
+          }
+        ]
+      },
+      "South Carolina": {
+        "lat": 33.45,
+        "lon": -79.566667,
+        "aeropuertos": [
+          {
+            "IATA": "ADR",
+            "name": "Andrews",
+            "latitude": 33.45,
+            "longitude": -79.566667
+          }
+        ]
+      },
+      "Ada": {
+        "lat": 34.8,
+        "lon": -96.666667,
+        "aeropuertos": [
+          {
+            "IATA": "ADT",
+            "name": "Ada",
+            "latitude": 34.8,
+            "longitude": -96.666667
+          }
+        ]
+      },
+      "Camp Springs": {
+        "lat": 38.816667,
+        "lon": -76.866667,
+        "aeropuertos": [
+          {
+            "IATA": "ADW",
+            "name": "Camp Springs Andrews AFB",
+            "latitude": 38.816667,
+            "longitude": -76.866667
+          }
+        ]
+      }
+    }
+  },
+  "Brazil": {
+    "lat": -24.103611,
+    "lon": -49.79,
+    "ciudades": {
+      "Arapoti": {
+        "lat": -24.103611,
+        "lon": -49.79,
+        "aeropuertos": [
+          {
+            "IATA": "AAG",
+            "name": "Arapoti",
+            "latitude": -24.103611,
+            "longitude": -49.79
+          }
+        ]
+      },
+      "Tocantins": {
+        "lat": -12.916667,
+        "lon": -46.933333,
+        "aeropuertos": [
+          {
+            "IATA": "AAI",
+            "name": "Arraias",
+            "latitude": -12.916667,
+            "longitude": -46.933333
+          }
+        ]
+      },
+      "Araxá": {
+        "lat": -19.568056,
+        "lon": -46.929167,
+        "aeropuertos": [
+          {
+            "IATA": "AAX",
+            "name": "Araxa",
+            "latitude": -19.568056,
+            "longitude": -46.929167
+          }
+        ]
+      }
+    }
+  },
+  "Germany": {
+    "lat": 50.75,
+    "lon": 6.133333,
+    "ciudades": {
+      "Aachen": {
+        "lat": 50.75,
+        "lon": 6.133333,
+        "aeropuertos": [
+          {
+            "IATA": "AAH",
+            "name": "Aachen / Merzbruck",
+            "latitude": 50.75,
+            "longitude": 6.133333
+          }
+        ]
+      }
+    }
+  },
+  "Suriname": {
+    "lat": 3.9,
+    "lon": -55.366667,
+    "ciudades": {
+      "Unknown": {
+        "lat": 3.9,
+        "lon": -55.366667,
+        "aeropuertos": [
+          {
+            "IATA": "AAJ",
+            "name": "Awaradam",
+            "latitude": 3.9,
+            "longitude": -55.366667
+          }
+        ]
+      },
+      "Albina": {
+        "lat": 5.5,
+        "lon": -54.083333,
+        "aeropuertos": [
+          {
+            "IATA": "ABN",
+            "name": "Albina",
+            "latitude": 5.5,
+            "longitude": -54.083333
+          }
+        ]
+      }
+    }
+  },
+  "Kiribati": {
+    "lat": 0.166667,
+    "lon": 173.583333,
+    "ciudades": {
+      "Aranuka": {
+        "lat": 0.166667,
+        "lon": 173.583333,
+        "aeropuertos": [
+          {
+            "IATA": "AAK",
+            "name": "Aranuka",
+            "latitude": 0.166667,
+            "longitude": 173.583333
+          }
+        ]
+      },
+      "Abaiang": {
+        "lat": 1.799150274715055,
+        "lon": 173.03934681636522,
+        "aeropuertos": [
+          {
+            "IATA": "ABF",
+            "name": "Abaiang",
+            "latitude": 1.799150274715055,
+            "longitude": 173.03934681636522
+          }
+        ]
+      },
+      "Abemama": {
+        "lat": 0.483333,
+        "lon": 173.85,
+        "aeropuertos": [
+          {
+            "IATA": "AEA",
+            "name": "Abemama",
+            "latitude": 0.483333,
+            "longitude": 173.85
+          }
+        ]
+      }
+    }
+  },
+  "Denmark": {
+    "lat": 57.093056,
+    "lon": 9.85,
+    "ciudades": {
+      "Aalborg": {
+        "lat": 57.093056,
+        "lon": 9.85,
+        "aeropuertos": [
+          {
+            "IATA": "AAL",
+            "name": "Aalborg",
+            "latitude": 57.093056,
+            "longitude": 9.85
+          }
+        ]
+      },
+      "Feldballe": {
+        "lat": 56.310278,
+        "lon": 10.618056,
+        "aeropuertos": [
+          {
+            "IATA": "AAR",
+            "name": "Aarhus",
+            "latitude": 56.310278,
+            "longitude": 10.618056
+          }
+        ]
+      }
+    }
+  },
+  "South Africa": {
+    "lat": -24.8,
+    "lon": 31.533333,
+    "ciudades": {
+      "Bushbuckridge": {
+        "lat": -24.8,
+        "lon": 31.533333,
+        "aeropuertos": [
+          {
+            "IATA": "AAM",
+            "name": "Mala Mala",
+            "latitude": -24.8,
+            "longitude": 31.533333
+          }
+        ]
+      },
+      "Limpopo": {
+        "lat": -22.666667,
+        "lon": 29.05,
+        "aeropuertos": [
+          {
+            "IATA": "ADY",
+            "name": "Alldays",
+            "latitude": -22.666667,
+            "longitude": 29.05
+          }
+        ]
+      }
+    }
+  },
+  "United Arab Emirates": {
+    "lat": 24.25,
+    "lon": 55.75,
+    "ciudades": {
+      "Al Sarooj": {
+        "lat": 24.25,
+        "lon": 55.75,
+        "aeropuertos": [
+          {
+            "IATA": "AAN",
+            "name": "Al Ain",
+            "latitude": 24.25,
+            "longitude": 55.75
+          }
+        ]
+      }
+    }
+  },
+  "Venezuela": {
+    "lat": 9.431944,
+    "lon": -64.463889,
+    "ciudades": {
+      "Anaco": {
+        "lat": 9.431944,
+        "lon": -64.463889,
+        "aeropuertos": [
+          {
+            "IATA": "AAO",
+            "name": "Anaco",
+            "latitude": 9.431944,
+            "longitude": -64.463889
+          }
+        ]
+      }
+    }
+  },
+  "Indonesia": {
+    "lat": -0.373611,
+    "lon": 117.255556,
+    "ciudades": {
+      "East Kalimantan": {
+        "lat": -0.373611,
+        "lon": 117.255556,
+        "aeropuertos": [
+          {
+            "IATA": "AAP",
+            "name": "AP Tumenggung Pranoto",
+            "latitude": -0.373611,
+            "longitude": 117.255556
+          }
+        ]
+      },
+      "Highland Papua": {
+        "lat": -3.916667,
+        "lon": 139.25,
+        "aeropuertos": [
+          {
+            "IATA": "AAS",
+            "name": "Apalapsili",
+            "latitude": -3.916667,
+            "longitude": 139.25
+          }
+        ]
+      },
+      "Atambua": {
+        "lat": -9.133333,
+        "lon": 124.883333,
+        "aeropuertos": [
+          {
+            "IATA": "ABU",
+            "name": "Atambua",
+            "latitude": -9.133333,
+            "longitude": 124.883333
+          }
+        ]
+      }
+    }
+  },
+  "Russia": {
+    "lat": 45.002097,
+    "lon": 37.347272,
+    "ciudades": {
+      "Vityazevo": {
+        "lat": 45.002097,
+        "lon": 37.347272,
+        "aeropuertos": [
+          {
+            "IATA": "AAQ",
+            "name": "Anapa",
+            "latitude": 45.002097,
+            "longitude": 37.347272
+          }
+        ]
+      },
+      "Abakan": {
+        "lat": 53.716667,
+        "lon": 91.5,
+        "aeropuertos": [
+          {
+            "IATA": "ABA",
+            "name": "Abakan",
+            "latitude": 53.716667,
+            "longitude": 91.5
+          }
+        ]
+      },
+      "Krasnoyarsk Krai": {
+        "lat": 56.266667,
+        "lon": 90.566667,
+        "aeropuertos": [
+          {
+            "IATA": "ACS",
+            "name": "Achinsk",
+            "latitude": 56.266667,
+            "longitude": 90.566667
+          }
+        ]
+      },
+      "Aldan": {
+        "lat": 58.6,
+        "lon": 125.4,
+        "aeropuertos": [
+          {
+            "IATA": "ADH",
+            "name": "Aldan",
+            "latitude": 58.6,
+            "longitude": 125.4
+          }
+        ]
+      }
+    }
+  },
+  "China": {
+    "lat": 47.75223,
+    "lon": 88.08738,
+    "ciudades": {
+      "Altay City": {
+        "lat": 47.75223,
+        "lon": 88.08738,
+        "aeropuertos": [
+          {
+            "IATA": "AAT",
+            "name": "Altay",
+            "latitude": 47.75223,
+            "longitude": 88.08738
+          }
+        ]
+      },
+      "Aksu City": {
+        "lat": 40.43,
+        "lon": 81.27,
+        "aeropuertos": [
+          {
+            "IATA": "ACF",
+            "name": "Alaer Talimu",
+            "latitude": 40.43,
+            "longitude": 81.27
+          }
+        ]
+      },
+      "Dingxiao": {
+        "lat": 25.085556,
+        "lon": 104.959444,
+        "aeropuertos": [
+          {
+            "IATA": "ACX",
+            "name": "Xingyi",
+            "latitude": 25.085556,
+            "longitude": 104.959444
+          }
+        ]
+      },
+      "Tianyang District": {
+        "lat": 23.7172,
+        "lon": 106.9506,
+        "aeropuertos": [
+          {
+            "IATA": "AEB",
+            "name": "Baise",
+            "latitude": 23.7172,
+            "longitude": 106.9506
+          }
+        ]
+      }
+    }
+  },
+  "Samoa": {
+    "lat": -13.458333,
+    "lon": -172.6,
+    "ciudades": {
+      "Matavai": {
+        "lat": -13.458333,
+        "lon": -172.6,
+        "aeropuertos": [
+          {
+            "IATA": "AAU",
+            "name": "Asau",
+            "latitude": -13.458333,
+            "longitude": -172.6
+          }
+        ]
+      }
+    }
+  },
+  "Philippines": {
+    "lat": 6.333333,
+    "lon": 124.766667,
+    "ciudades": {
+      "Lambontong": {
+        "lat": 6.333333,
+        "lon": 124.766667,
+        "aeropuertos": [
+          {
+            "IATA": "AAV",
+            "name": "Alah",
+            "latitude": 6.333333,
+            "longitude": 124.766667
+          }
+        ]
+      }
+    }
+  },
+  "Pakistan": {
+    "lat": 34.2,
+    "lon": 73.25,
+    "ciudades": {
+      "Abbottabad": {
+        "lat": 34.2,
+        "lon": 73.25,
+        "aeropuertos": [
+          {
+            "IATA": "AAW",
+            "name": "Abbottabad",
+            "latitude": 34.2,
+            "longitude": 73.25
+          }
+        ]
+      }
+    }
+  },
+  "Yemen": {
+    "lat": 16.2,
+    "lon": 52.183333,
+    "ciudades": {
+      "Al Ghaydah": {
+        "lat": 16.2,
+        "lon": 52.183333,
+        "aeropuertos": [
+          {
+            "IATA": "AAY",
+            "name": "Al Ghaydah",
+            "latitude": 16.2,
+            "longitude": 52.183333
+          }
+        ]
+      },
+      "Aden City": {
+        "lat": 12.827778,
+        "lon": 45.030556,
+        "aeropuertos": [
+          {
+            "IATA": "ADE",
+            "name": "Aden",
+            "latitude": 12.827778,
+            "longitude": 45.030556
+          }
+        ]
+      }
+    }
+  },
+  "Guatemala": {
+    "lat": 14.865556,
+    "lon": -91.501944,
+    "ciudades": {
+      "Chajabal": {
+        "lat": 14.865556,
+        "lon": -91.501944,
+        "aeropuertos": [
+          {
+            "IATA": "AAZ",
+            "name": "Quetzaltenango",
+            "latitude": 14.865556,
+            "longitude": -91.501944
+          }
+        ]
+      }
+    }
+  },
+  "Nigeria": {
+    "lat": 6.195168,
+    "lon": 6.729126,
+    "ciudades": {
+      "Iyiba": {
+        "lat": 6.195168,
+        "lon": 6.729126,
+        "aeropuertos": [
+          {
+            "IATA": "ABB",
+            "name": "Asaba International",
+            "latitude": 6.195168,
+            "longitude": 6.729126
+          }
+        ]
+      },
+      "Federal Capital Territory": {
+        "lat": 9.0,
+        "lon": 7.266667,
+        "aeropuertos": [
+          {
+            "IATA": "ABV",
+            "name": "Abuja",
+            "latitude": 9.0,
+            "longitude": 7.266667
+          }
+        ]
+      }
+    }
+  },
+  "Spain": {
+    "lat": 38.948333,
+    "lon": -1.863333,
+    "ciudades": {
+      "Albacete": {
+        "lat": 38.948333,
+        "lon": -1.863333,
+        "aeropuertos": [
+          {
+            "IATA": "ABC",
+            "name": "Albacete",
+            "latitude": 38.948333,
+            "longitude": -1.863333
+          }
+        ]
+      },
+      "San Bartolomé": {
+        "lat": 28.9502502,
+        "lon": -13.6057447,
+        "aeropuertos": [
+          {
+            "IATA": "ACE",
+            "name": "Lanzarote",
+            "latitude": 28.9502502,
+            "longitude": -13.6057447
+          }
+        ]
+      }
+    }
+  },
+  "Iran": {
+    "lat": 30.366667,
+    "lon": 48.233333,
+    "ciudades": {
+      "Khorramshahr": {
+        "lat": 30.366667,
+        "lon": 48.233333,
+        "aeropuertos": [
+          {
+            "IATA": "ABD",
+            "name": "Abadan",
+            "latitude": 30.366667,
+            "longitude": 48.233333
+          }
+        ]
+      },
+      "دهستان بناجوی شمالی": {
+        "lat": 37.354444,
+        "lon": 46.149722,
+        "aeropuertos": [
+          {
+            "IATA": "ACP",
+            "name": "Sahand",
+            "latitude": 37.354444,
+            "longitude": 46.149722
+          }
+        ]
+      },
+      "دهستان ادیمی": {
+        "lat": 31.085833,
+        "lon": 61.535,
+        "aeropuertos": [
+          {
+            "IATA": "ACZ",
+            "name": "Zabol",
+            "latitude": 31.085833,
+            "longitude": 61.535
+          }
+        ]
+      },
+      "Ardabil": {
+        "lat": 38.25,
+        "lon": 48.3,
+        "aeropuertos": [
+          {
+            "IATA": "ADU",
+            "name": "Ardabil",
+            "latitude": 38.25,
+            "longitude": 48.3
+          }
+        ]
+      }
+    }
+  },
+  "Côte d'Ivoire": {
+    "lat": 5.256389,
+    "lon": -3.926944,
+    "ciudades": {
+      "Port-Bouët": {
+        "lat": 5.256389,
+        "lon": -3.926944,
+        "aeropuertos": [
+          {
+            "IATA": "ABJ",
+            "name": "Abidjan",
+            "latitude": 5.256389,
+            "longitude": -3.926944
+          }
+        ]
+      },
+      "Krinjabo": {
+        "lat": 5.433333,
+        "lon": -3.216667,
+        "aeropuertos": [
+          {
+            "IATA": "ABO",
+            "name": "Aboisso",
+            "latitude": 5.433333,
+            "longitude": -3.216667
+          }
+        ]
+      }
+    }
+  },
+  "Ethiopia": {
+    "lat": 6.733889,
+    "lon": 44.266111,
+    "ciudades": {
+      "Kebri Dehar": {
+        "lat": 6.733889,
+        "lon": 44.266111,
+        "aeropuertos": [
+          {
+            "IATA": "ABK",
+            "name": "Kabri Dar",
+            "latitude": 6.733889,
+            "longitude": 44.266111
+          }
+        ]
+      },
+      "Addis Ababa": {
+        "lat": 8.977778,
+        "lon": 38.798056,
+        "aeropuertos": [
+          {
+            "IATA": "ADD",
+            "name": "Addis Ababa",
+            "latitude": 8.977778,
+            "longitude": 38.798056
+          }
+        ]
+      }
+    }
+  },
+  "Papua New Guinea": {
+    "lat": -6.066667,
+    "lon": 141.1,
+    "ciudades": {
+      "Atkamba": {
+        "lat": -6.066667,
+        "lon": 141.1,
+        "aeropuertos": [
+          {
+            "IATA": "ABP",
+            "name": "Atkamba",
+            "latitude": -6.066667,
+            "longitude": 141.1
+          }
+        ]
+      },
+      "Central": {
+        "lat": -10.183333,
+        "lon": 148.7,
+        "aeropuertos": [
+          {
+            "IATA": "ABW",
+            "name": "Abau",
+            "latitude": -10.183333,
+            "longitude": 148.7
+          }
+        ]
+      },
+      "Eastern Highlands": {
+        "lat": -7.133333,
+        "lon": 145.733333,
+        "aeropuertos": [
+          {
+            "IATA": "ADC",
+            "name": "Andakombe",
+            "latitude": -7.133333,
+            "longitude": 145.733333
+          }
+        ]
+      }
+    }
+  },
+  "Egypt": {
+    "lat": 22.372222,
+    "lon": 31.615278,
+    "ciudades": {
+      "Aswan": {
+        "lat": 22.372222,
+        "lon": 31.615278,
+        "aeropuertos": [
+          {
+            "IATA": "ABS",
+            "name": "Abu Simbel",
+            "latitude": 22.372222,
+            "longitude": 31.615278
+          }
+        ]
+      }
+    }
+  },
+  "Saudi Arabia": {
+    "lat": 20.296111,
+    "lon": 41.634167,
+    "ciudades": {
+      "الجذي": {
+        "lat": 20.296111,
+        "lon": 41.634167,
+        "aeropuertos": [
+          {
+            "IATA": "ABT",
+            "name": "Al-Baha",
+            "latitude": 20.296111,
+            "longitude": 41.634167
+          }
+        ]
+      }
+    }
+  },
+  "United Kingdom": {
+    "lat": 57.204167,
+    "lon": -2.198056,
+    "ciudades": {
+      "Aberdeen City": {
+        "lat": 57.204167,
+        "lon": -2.198056,
+        "aeropuertos": [
+          {
+            "IATA": "ABZ",
+            "name": "Aberdeen",
+            "latitude": 57.204167,
+            "longitude": -2.198056
+          }
+        ]
+      },
+      "Test Valley": {
+        "lat": 51.216667,
+        "lon": -1.466667,
+        "aeropuertos": [
+          {
+            "IATA": "ADV",
+            "name": "Andover",
+            "latitude": 51.216667,
+            "longitude": -1.466667
+          }
+        ]
+      }
+    }
+  },
+  "Mexico": {
+    "lat": 16.755556,
+    "lon": -99.766944,
+    "ciudades": {
+      "Acapulco": {
+        "lat": 16.755556,
+        "lon": -99.766944,
+        "aeropuertos": [
+          {
+            "IATA": "ACA",
+            "name": "Acapulco",
+            "latitude": 16.755556,
+            "longitude": -99.766944
+          }
+        ]
+      },
+      "Coahuila": {
+        "lat": 29.3329,
+        "lon": -101.099,
+        "aeropuertos": [
+          {
+            "IATA": "ACN",
+            "name": "Ciudad Acuna",
+            "latitude": 29.3329,
+            "longitude": -101.099
+          }
+        ]
+      }
+    }
+  },
+  "Ghana": {
+    "lat": 5.595278,
+    "lon": -0.170833,
+    "ciudades": {
+      "Accra": {
+        "lat": 5.595278,
+        "lon": -0.170833,
+        "aeropuertos": [
+          {
+            "IATA": "ACC",
+            "name": "Accra",
+            "latitude": 5.595278,
+            "longitude": -0.170833
+          }
+        ]
+      }
+    }
+  },
+  "Colombia": {
+    "lat": 8.516667,
+    "lon": -77.3,
+    "ciudades": {
+      "Acandí": {
+        "lat": 8.516667,
+        "lon": -77.3,
+        "aeropuertos": [
+          {
+            "IATA": "ACD",
+            "name": "Acandi",
+            "latitude": 8.516667,
+            "longitude": -77.3
+          }
+        ]
+      },
+      "Sabanalarga": {
+        "lat": 4.75,
+        "lon": -73.0,
+        "aeropuertos": [
+          {
+            "IATA": "ACL",
+            "name": "Aguaclara",
+            "latitude": 4.75,
+            "longitude": -73.0
+          }
+        ]
+      },
+      "Puerto Arica": {
+        "lat": -2.0,
+        "lon": -71.833333,
+        "aeropuertos": [
+          {
+            "IATA": "ACM",
+            "name": "Arica",
+            "latitude": -2.0,
+            "longitude": -71.833333
+          }
+        ]
+      },
+      "Amazonas": {
+        "lat": -0.601104,
+        "lon": -72.398014,
+        "aeropuertos": [
+          {
+            "IATA": "ACR",
+            "name": "Araracuara",
+            "latitude": -0.601104,
+            "longitude": -72.398014
+          }
+        ]
+      },
+      "Antioquia": {
+        "lat": 5.666667,
+        "lon": -75.933333,
+        "aeropuertos": [
+          {
+            "IATA": "ADN",
+            "name": "Andes",
+            "latitude": 5.666667,
+            "longitude": -75.933333
+          }
+        ]
+      },
+      "San Andrés": {
+        "lat": 12.583333,
+        "lon": -81.7,
+        "aeropuertos": [
+          {
+            "IATA": "ADZ",
+            "name": "San Andres Island",
+            "latitude": 12.583333,
+            "longitude": -81.7
+          }
+        ]
+      }
+    }
+  },
+  "Austria": {
+    "lat": 47.4833,
+    "lon": 9.5667,
+    "ciudades": {
+      "Höchst": {
+        "lat": 47.4833,
+        "lon": 9.5667,
+        "aeropuertos": [
+          {
+            "IATA": "ACH",
+            "name": "St Gallen Altenrhein",
+            "latitude": 47.4833,
+            "longitude": 9.5667
+          }
+        ]
+      }
+    }
+  },
+  "Guernsey": {
+    "lat": 49.706944,
+    "lon": -2.215278,
+    "ciudades": {
+      "Alderney": {
+        "lat": 49.706944,
+        "lon": -2.215278,
+        "aeropuertos": [
+          {
+            "IATA": "ACI",
+            "name": "Alderney",
+            "latitude": 49.706944,
+            "longitude": -2.215278
+          }
+        ]
+      }
+    }
+  },
+  "Sri Lanka": {
+    "lat": 8.35,
+    "lon": 80.383333,
+    "ciudades": {
+      "Anuradhapura": {
+        "lat": 8.35,
+        "lon": 80.383333,
+        "aeropuertos": [
+          {
+            "IATA": "ACJ",
+            "name": "Anuradhapura",
+            "latitude": 8.35,
+            "longitude": 80.383333
+          }
+        ]
+      },
+      "Uhana": {
+        "lat": 7.336944,
+        "lon": 81.630278,
+        "aeropuertos": [
+          {
+            "IATA": "ADP",
+            "name": "Gal Oya",
+            "latitude": 7.336944,
+            "longitude": 81.630278
+          }
+        ]
+      }
+    }
+  },
+  "Costa Rica": {
+    "lat": 9.691961823199776,
+    "lon": -85.09660829022813,
+    "ciudades": {
+      "Cóbano": {
+        "lat": 9.691961823199776,
+        "lon": -85.09660829022813,
+        "aeropuertos": [
+          {
+            "IATA": "ACO",
+            "name": "Cobano",
+            "latitude": 9.691961823199776,
+            "longitude": -85.09660829022813
+          }
+        ]
+      }
+    }
+  },
+  "Panama": {
+    "lat": 9.190904,
+    "lon": -77.993778,
+    "ciudades": {
+      "Ailigandí": {
+        "lat": 9.190904,
+        "lon": -77.993778,
+        "aeropuertos": [
+          {
+            "IATA": "ACU",
+            "name": "Achutupo",
+            "latitude": 9.190904,
+            "longitude": -77.993778
+          }
+        ]
+      }
+    }
+  },
+  "Turkey": {
+    "lat": 36.983611,
+    "lon": 35.280833,
+    "ciudades": {
+      "Seyhan": {
+        "lat": 36.983611,
+        "lon": 35.280833,
+        "aeropuertos": [
+          {
+            "IATA": "ADA",
+            "name": "Adana",
+            "latitude": 36.983611,
+            "longitude": 35.280833
+          }
+        ]
+      },
+      "Gaziemir": {
+        "lat": 38.283333,
+        "lon": 27.15,
+        "aeropuertos": [
+          {
+            "IATA": "ADB",
+            "name": "Izmir",
+            "latitude": 38.283333,
+            "longitude": 27.15
+          }
+        ]
+      },
+      "Kâhta": {
+        "lat": 37.731369,
+        "lon": 38.468936,
+        "aeropuertos": [
+          {
+            "IATA": "ADF",
+            "name": "Adiyaman",
+            "latitude": 37.731369,
+            "longitude": 38.468936
+          }
+        ]
+      }
+    }
+  },
+  "Namibia": {
+    "lat": -22.4,
+    "lon": 15.0,
+    "ciudades": {
+      "Erongo Region": {
+        "lat": -22.4,
+        "lon": 15.0,
+        "aeropuertos": [
+          {
+            "IATA": "ADI",
+            "name": "Arandis",
+            "latitude": -22.4,
+            "longitude": 15.0
+          }
+        ]
+      }
+    }
+  },
+  "Jordan": {
+    "lat": 31.95,
+    "lon": 35.983333,
+    "ciudades": {
+      "Amman": {
+        "lat": 31.95,
+        "lon": 35.983333,
+        "aeropuertos": [
+          {
+            "IATA": "ADJ",
+            "name": "Amman Civil - Marka",
+            "latitude": 31.95,
+            "longitude": 35.983333
+          }
+        ]
+      }
+    }
+  }
+}
