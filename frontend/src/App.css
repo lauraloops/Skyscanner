@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+}
+
+.skyscanner-bg {
+  background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.split-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border-radius: 30px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.95);
+  position: relative;
+}
+
+.left-btn, .right-btn {
+  flex: 1;
+  font-size: 2.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin: 0 30px;
+  border-radius: 18px;
+  padding: 40px 0;
+  box-shadow: 0 2px 12px rgba(0,170,255,0.08);
+}
+
+.left-btn {
+  background: linear-gradient(135deg, #00aaff 60%, #e6f7ff 100%);
+  color: #fff;
+  border: 2px solid #00aaff;
+}
+
+.right-btn {
+  background: linear-gradient(135deg, #fff 60%, #00aaff 100%);
+  color: #00aaff;
+  border: 2px solid #00aaff;
+}
+
+.left-btn:hover, .right-btn:hover {
+  box-shadow: 0 4px 24px rgba(0,170,255,0.18);
+  background: #e6f7ff;
+  color: #005f99;
+}
+
+.full-screen {
+  width: 60vw;
+  height: 60vh;
+  background: white;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Avión orbitando */
+.plane-orbit {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  z-index: 2;
+  animation: orbit 3s linear infinite;
+}
+.plane-orbit-right {
+  left: auto;
+  right: -60px;
+  animation-direction: reverse;
+}
+.plane-img {
+  width: 80px;
+  height: 80px;
+}
+@keyframes orbit {
+  0% { transform: translateY(-50%) rotate(0deg) scale(1); }
+  50% { transform: translateY(-60%) rotate(180deg) scale(1.1); }
+  100% { transform: translateY(-50%) rotate(360deg) scale(1); }
+}
