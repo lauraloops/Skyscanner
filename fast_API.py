@@ -25,7 +25,7 @@ df['vibes'] = df['vibes'].apply(parse_vibes)
 
 # Request model
 class UserCityVibes(BaseModel):
-    user_requests: List[Dict[str, List[str]]]  # Each dict is like {"Barcelona": ["beach", "great_food"]}
+    user_requests: List[Dict[str, Union[str, List[str]]]]  # {"username": "Juan", "city": "Barcelona", "vibes": ["beach", "food"]}
 
 @app.post("/find_matching_airports/")
 def find_matching_airports(user_input: UserCityVibes):
@@ -35,11 +35,13 @@ def find_matching_airports(user_input: UserCityVibes):
     user_filtered_sets = []
 
     for user_dict in user_requests:
-        if len(user_dict) != 1:
-            return {"error": "Each user request must contain exactly one city and its vibes."}
-        
-        # Extract city and requested vibes
-        user_city, user_vibes = list(user_dict.items())[0]
+        try:
+            username = user_dict["username"]
+            user_city = user_dict["city"]
+            user_vibes = user_dict["vibes"]
+        except KeyError:
+            return {"error": "Each user request must include 'username', 'city', and 'vibes'."}
+
 
         # Filter out vibes not in the dataset
         user_vibes = [v for v in user_vibes if v in valid_vibes]
