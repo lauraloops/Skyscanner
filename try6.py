@@ -29,8 +29,8 @@ def find_airports_with_all_user_preferences(df: pd.DataFrame, user_requests: Lis
         return df_filtered[['id', 'IATA', 'en-GB', 'vibes']]
 
     # Si no, buscar los que más coincidencias tienen con todas las vibes pedidas
-    print("\n[!] No se encontraron aeropuertos que cumplan todas las preferencias.")
-    print("[!] Mostrando los 10 aeropuertos que más se acercan...")
+    print("\n[!] There are no airports that match all preferences.")
+    print("[!] Showing the 10 closest airports...")
 
     # Unión de todas las vibes pedidas por todos los usuarios
     all_requested_vibes = set().union(*user_requests)
@@ -49,17 +49,17 @@ def collect_user_requests(valid_vibes: set) -> List[List[str]]:
     
     while True:
         try:
-            total_users = int(input("¿Cuántos usuarios hay? Ingresa un número entero: "))
+            total_users = int(input("How many users are there? Enter an integer: "))
             if total_users > 0:
                 break
             else:
-                print("El número debe ser mayor que cero.")
+                print("The number must be greater than 0.")
         except ValueError:
-            print("Entrada inválida. Por favor, introduce un número entero.")
+            print("Invalid entrance. Please, enter an integer.")
 
     for user_num in range(1, total_users + 1):
         while True:
-            user_input = input(f"Usuario {user_num} - escribe las vibes separadas por coma (ej: beach, art_and_culture): ").strip()
+            user_input = input(f"User {user_num} - writte the vibes separated by a ",": ").strip()
             user_vibes = [v.strip() for v in user_input.split(',') if v.strip()]
             filtered_vibes = [v for v in user_vibes if v in valid_vibes]
 
@@ -67,7 +67,7 @@ def collect_user_requests(valid_vibes: set) -> List[List[str]]:
                 user_requests.append(filtered_vibes)
                 break
             else:
-                print("Ninguna de las vibes introducidas es válida. Intenta de nuevo.")
+                print("None of the introduced vibes is valid. Try again.")
 
     return user_requests
 
@@ -84,13 +84,13 @@ if __name__ == "__main__":
     user_requests = collect_user_requests(valid_vibes=all_vibes)
 
     if not user_requests:
-        print("No se introdujeron preferencias válidas.")
+        print("No valid preferences introduced.")
     else:
         result = find_airports_with_all_user_preferences(df_airports, user_requests)
 
-        print("\n=== AEROPUERTOS QUE CUMPLEN LAS PREFERENCIAS DE TODOS LOS USUARIOS ===")
+        print("\n=== AIRPORTS THAT MATCH ALL PREFERENCES ===")
         if result.empty:
-            print("No se encontró ningún aeropuerto que cumpla con todas las preferencias.")
+            print("No airport that satisfies all preferences has been found.")
         else:
             print(result.head(10))
 
