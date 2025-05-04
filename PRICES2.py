@@ -58,36 +58,36 @@ def compute_mean_roundtrip_price(origins, destinations, date_departure, date_ret
             print(f"🔎 Ida: {origin} → {dest}")
             session_token_out = create_search(origin, dest, date_departure)
             if not session_token_out:
-                print(f"⚠️ Error creando sesión de ida para {origin} → {dest}")
+                print(f"Error creando sesión de ida para {origin} → {dest}")
                 continue
             data_out = poll_results(session_token_out)
             if not data_out:
-                print(f"⚠️ Sin resultados de ida para {origin} → {dest}")
+                print(f"Sin resultados de ida para {origin} → {dest}")
                 continue
             price_out = get_min_price(data_out)
 
-            print(f"🔁 Vuelta: {dest} → {origin}")
+            print(f"Vuelta: {dest} → {origin}")
             session_token_in = create_search(dest, origin, date_return)
             if not session_token_in:
-                print(f"⚠️ Error creando sesión de vuelta para {dest} → {origin}")
+                print(f"Error creando sesión de vuelta para {dest} → {origin}")
                 continue
             data_in = poll_results(session_token_in)
             if not data_in:
-                print(f"⚠️ Sin resultados de vuelta para {dest} → {origin}")
+                print(f"Sin resultados de vuelta para {dest} → {origin}")
                 continue
             price_in = get_min_price(data_in)
 
             if price_out is not None and price_in is not None:
                 roundtrip = price_out + price_in
-                print(f"✅ Ida + Vuelta {origin} ↔ {dest}: €{roundtrip}")
+                print(f"Ida + Vuelta {origin} ↔ {dest}: €{roundtrip}")
                 roundtrip_prices.append(roundtrip)
 
         if roundtrip_prices:
             mean_price = round(statistics.mean(roundtrip_prices), 2)
             result[dest] = mean_price
-            print(f"📊 Media total para {dest} (ida+vuelta): €{mean_price}\n")
+            print(f"Media total para {dest} (ida+vuelta): €{mean_price}\n")
         else:
-            print(f"❌ No se encontraron precios ida y vuelta para {dest}\n")
+            print(f"No se encontraron precios ida y vuelta para {dest}\n")
     return result
 
 if __name__ == "__main__":
@@ -98,6 +98,6 @@ if __name__ == "__main__":
 
     avg_prices = compute_mean_roundtrip_price(origins, destinations, date_departure, date_return)
 
-    print("\n💰 RESULTADOS FINALES DE IDA + VUELTA:")
+    print("\nRESULTADOS FINALES DE IDA + VUELTA:")
     for dest, price in avg_prices.items():
         print(f"{dest}: €{price}")
