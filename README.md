@@ -1,6 +1,6 @@
 # ✈️ SkyTogether – Meet in the Middle
 
-[![GitHub](https://img.shields.io/badge/repo-Skyscanner-blue?logo=github)](https://github.com/lauraloops/Skyscanner/tree/main)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Skyscanner-blue?logo=github)](https://github.com/lauraloops/Skyscanner)
 
 **SkyTogether** is a collaborative, AI-powered travel planner designed to help friends and family living in different countries find the perfect destination to reunite. Built for the **Skyscanner Challenge: "The Perfect Reunion"**, this app makes group travel planning fair, fast, and fun.
 
@@ -10,7 +10,7 @@
 
 After reviewing all the proposed challenges, we were particularly inspired by the idea of reconnecting people who live far apart. This led us to choose the Skyscanner project, *“The Perfect Reunion: Finding the Best Destination for Friends Around the World.”*
 
-We wanted to create a solution that not only solves a real problem, but also brings people joy by helping them discover exciting destinations that work for everyone.
+We wanted to create a solution that not only solves a real problem but also brings people joy by helping them discover exciting destinations that work for everyone.
 
 ---
 
@@ -19,7 +19,7 @@ We wanted to create a solution that not only solves a real problem, but also bri
 SkyTogether allows a group of users to collaboratively decide where to meet based on:
 
 - ✈️ **Origin cities** of each member  
-- 🎯 **Travel vibes** (e.g. beach, nightlife, food, culture)  
+- 🎯 **Travel vibes** (e.g., beach, nightlife, food, culture)  
 - 🤖 **AI-assisted refinement** using Gemini API  
 - 💸 **Individual budget constraints**
 
@@ -50,7 +50,7 @@ SkyTogether allows a group of users to collaboratively decide where to meet base
 
 ## 🧗 Challenges We Faced
 
-- First time working with **APIs**, **React**, and **JavaScript** for most of the team
+- First-time working with **APIs**, **React**, and **JavaScript** for most of the team
 - Integration between backend (FastAPI) and frontend (React)
 - Handling a **large and complex** travel dataset
 
@@ -58,9 +58,9 @@ SkyTogether allows a group of users to collaboratively decide where to meet base
 
 ## ✅ Accomplishments
 
-- Connected backend and frontend successfully  
-- Built a functional collaborative travel planner  
-- Managed real-time API calls and custom filtering logic  
+- Successfully connected backend and frontend
+- Built a functional collaborative travel planner
+- Managed real-time API calls and custom filtering logic
 - Learned to work under tight time constraints as a team
 
 ---
@@ -111,9 +111,10 @@ SkyTogether allows a group of users to collaboratively decide where to meet base
 
 ## 📫 Contact
 
-Want to contribute or ask something? Feel free to open an [issue](https://github.com/lauraloops/Skyscanner/issues) or fork the project!
+For feedback or collaboration, feel free to open an [issue](https://github.com/lauraloops/Skyscanner/issues) or fork the project.
 
 ---
 
 > Created with ❤️ for the Skyscanner "Perfect Reunion" Challenge
+
 
