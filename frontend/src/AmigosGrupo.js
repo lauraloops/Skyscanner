@@ -8,7 +8,7 @@ function generateGroupCode() {
 }
 
 
-export default function AmigosGrupo({ numAmigos, onAllJoined }) {
+export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }) {
   const [groupCode] = useState(generateGroupCode());
   const [participants, setParticipants] = useState([]); // array de nombres
   const [name, setName] = useState('');
@@ -146,6 +146,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
           >
             Unirse
           </button>
+          {/* Botón Volver eliminado */}
         </div>
       );
     }
@@ -156,6 +157,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
           <div style={{ width: '100%' }}>
             <MapaAmigos onSelect={handleSelectOrigin} />
           </div>
+          {/* Botón Volver eliminado */}
         </div>
       );
     }
@@ -184,6 +186,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
           >
             Guardar preferencias
           </button>
+          {/* Botón Volver eliminado */}
         </div>
       );
     }
@@ -207,6 +210,17 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
             <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No seleccionaste vibes</li>
           )}
         </ul>
+        <button
+          className="right-btn"
+          style={{ fontSize: 20, padding: '14px 0', margin: '0 0 24px 0', width: 320, alignSelf: 'center' }}
+          onClick={() => {
+            if (typeof window.setPantallaCreativa === 'function') {
+              window.setPantallaCreativa(true);
+            }
+          }}
+        >
+          Usa tu creatividad
+        </button>
       </div>
     );
   }
@@ -276,6 +290,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined }) {
           >
             ¿Eres un amigo? Unirse a un grupo
           </button>
+          {/* Botón Volver eliminado */}
         </div>
       </div>
     );
@@ -336,7 +351,7 @@ function VibesScreen({ onSave }) {
   return (
     <div className="full-screen" style={{ maxWidth: 700, margin: 'auto', position: 'relative', minHeight: '80vh' }}>
       <Vibes onSelected={setSelected} />
-      <div style={{ position: 'absolute', left: 0, right: 0, bottom: 24, display: 'flex', justifyContent: 'center' }}>
+      <div style={{ position: 'absolute', left: 0, right: 0, bottom: 24, display: 'flex', justifyContent: 'center', gap: 16 }}>
         <button
           className="right-btn"
           style={{ fontSize: 20, padding: '14px 40px' }}
@@ -345,6 +360,7 @@ function VibesScreen({ onSave }) {
         >
           Guardar preferencias
         </button>
+        {/* Botón Volver eliminado */}
       </div>
     </div>
   );
@@ -369,6 +385,17 @@ function VibesScreen({ onSave }) {
             <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No seleccionaste vibes</li>
           )}
         </ul>
+        <button
+          className="right-btn"
+          style={{ fontSize: 20, padding: '14px 0', margin: '0 0 24px 0', width: 320, alignSelf: 'center', marginTop: 30 }}
+          onClick={() => {
+            if (typeof setPantallaTexto === 'function') {
+              setPantallaTexto(true);
+            }
+          }}
+        >
+          Usa tu creatividad
+        </button>
       </div>
     );
 }

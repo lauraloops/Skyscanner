@@ -1,10 +1,12 @@
 
+
 # FastAPI version
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import json
 from pydantic import BaseModel
+from typing import List, Union
 
 app = FastAPI()
 
@@ -22,9 +24,50 @@ class UsuarioVibes(BaseModel):
     origen: str
     vibes: list
 
-# Endpoint para guardar uno o varios usuarios en usuarios_vibes.json
-from typing import List, Union
-from fastapi import Body
+
+class TextoCreativo(BaseModel):
+    texto: str
+
+
+
+
+@app.post("/guardar_texto/")
+async def guardar_texto(texto: TextoCreativo = Body(...)):
+    ruta = os.path.join(os.path.dirname(__file__), '../frontend/src/textos_creativos.json')
+    try:
+        if os.path.exists(ruta):
+            with open(ruta, 'r', encoding='utf-8') as f:
+                try:
+                    datos = json.load(f)
+                except Exception:
+                    datos = []
+        else:
+            datos = []
+        datos.append(texto.dict())
+        with open(ruta, 'w', encoding='utf-8') as f:
+            json.dump(datos, f, ensure_ascii=False, indent=2)
+        return {"ok": True, "msg": "Texto guardado"}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+@app.post("/guardar_presupuesto/")
+async def guardar_presupuesto(presupuesto: int = Body(...)):
+    ruta = os.path.join(os.path.dirname(__file__), '../frontend/src/presupuestos.json')
+    try:
+        if os.path.exists(ruta):
+            with open(ruta, 'r', encoding='utf-8') as f:
+                try:
+                    datos = json.load(f)
+                except Exception:
+                    datos = []
+        else:
+            datos = []
+        datos.append(presupuesto)
+        with open(ruta, 'w', encoding='utf-8') as f:
+            json.dump(datos, f, ensure_ascii=False, indent=2)
+        return {"ok": True, "msg": "Presupuesto guardado"}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
 
 @app.post("/guardar_usuario")
 async def guardar_usuario(usuarios: Union[UsuarioVibes, List[UsuarioVibes]] = Body(...)):

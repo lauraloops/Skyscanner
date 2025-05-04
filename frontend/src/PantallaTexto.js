@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import PresupuestoSlider from './PresupuestoSlider';
+
 
 export default function PantallaTexto({ onVolver }) {
+  const [mostrarPresupuesto, setMostrarPresupuesto] = useState(false);
   const [texto, setTexto] = useState('');
   const [guardado, setGuardado] = useState(false);
   const [error, setError] = useState('');
@@ -12,7 +15,7 @@ export default function PantallaTexto({ onVolver }) {
     setError('');
     setGuardado(false);
     try {
-      // Aquí puedes cambiar la URL y el body según tu backend
+      // Solo enviamos el texto al backend
       const response = await fetch('http://127.0.0.1:8000/guardar_texto/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -31,6 +34,9 @@ export default function PantallaTexto({ onVolver }) {
     }
   };
 
+  if (mostrarPresupuesto) {
+    return <PresupuestoSlider onBack={() => setMostrarPresupuesto(false)} />;
+  }
   return (
     <div className="full-screen" style={{ maxWidth: 600, margin: 'auto', paddingTop: 40 }}>
       <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Introduce tu texto</h2>
@@ -61,21 +67,20 @@ export default function PantallaTexto({ onVolver }) {
       >
         {loading ? 'Guardando...' : 'Guardar texto'}
       </button>
+      <button
+        className="right-btn"
+        style={{ width: '100%', fontSize: 18, padding: '12px 0', marginBottom: 10, background: '#00eaff', color: '#22304a' }}
+        onClick={() => setMostrarPresupuesto(true)}
+      >
+        Elegir presupuesto
+      </button>
       {error && (
         <div style={{ color: 'red', marginBottom: 16 }}>{error}</div>
       )}
       {guardado && (
         <div style={{ color: 'green', marginBottom: 16 }}>¡Texto guardado correctamente!</div>
       )}
-      {onVolver && (
-        <button
-          className="left-btn"
-          style={{ width: '100%', fontSize: 18, padding: '12px 0', marginTop: 10 }}
-          onClick={onVolver}
-        >
-          Volver
-        </button>
-      )}
+      {/* Botón Volver eliminado */}
     </div>
   );
 }

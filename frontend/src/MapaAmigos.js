@@ -208,41 +208,7 @@ function MapaAmigos({ onSelect }) {
         }}
       >
         {/* Botón atrás */}
-        <div style={{ position: 'absolute', left: 24, top: 0, bottom: 0, display: 'flex', alignItems: 'center' }}>
-          {(nivel === 'ciudad' || nivel === 'aeropuerto') && (
-            <button
-              onClick={handleBack}
-              style={{
-                fontSize: 22,
-                cursor: 'pointer',
-                background: 'linear-gradient(135deg, #c7d2fe 0%, #818cf8 100%)',
-                border: 'none',
-                borderRadius: '50%',
-                width: 44,
-                height: 44,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 2px 10px rgba(99,102,241,0.13)',
-                transition: 'background 0.2s, box-shadow 0.2s',
-                outline: 'none',
-              }}
-              title="Volver"
-              onMouseOver={e => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #818cf8 0%, #6366f1 100%)';
-                e.currentTarget.style.boxShadow = '0 4px 16px rgba(99,102,241,0.18)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #c7d2fe 0%, #818cf8 100%)';
-                e.currentTarget.style.boxShadow = '0 2px 10px rgba(99,102,241,0.13)';
-              }}
-            >
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.5 18L8.5 12L14.5 6" stroke="#3730a3" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-          )}
-        </div>
+        {/* Botón Volver eliminado */}
         {/* Título centrado */}
         <div style={{ flex: 1, textAlign: 'center', pointerEvents: 'none', zIndex: 1 }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
