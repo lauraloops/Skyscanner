@@ -26,10 +26,10 @@ function App() {
           <div className="split-screen" style={{ background: 'none', boxShadow: 'none', position: 'static', width: 'auto', height: 'auto' }}>
             <div className="button-group">
               <button className="left-btn" onClick={() => setMode('solo')}>
-                Viajar solo
+                Travel Alone
               </button>
               <button className="right-btn" onClick={() => setMode('amigos')}>
-                Viajar con Amigos
+                Travel with Friends
               </button>
             </div>
           </div>
@@ -43,11 +43,11 @@ function App() {
           <>
             <script dangerouslySetInnerHTML={{__html:`window.setPantallaTexto = ${setPantallaTexto.toString()}`}} />
             <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#22304a' }}>
-              <h2>Viajar con Amigos</h2>
+              <h2>Travel with Friends</h2>
               {!amigosConfirmado ? (
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px', marginTop: '32px' }}>
                   <label style={{ fontSize: '1.3rem', color: '#e6f7ff' }}>
-                    ¿Cuántos amigos vais a viajar? (incluyéndote)
+                    How many friends are you going to travel with? (including yourself)
                   </label>
                   <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '16px', margin: '16px 0' }}>
                     <button
@@ -99,7 +99,7 @@ function App() {
                         transition: 'background 0.2s, color 0.2s',
                       }}
                       onClick={() => setNumAmigos(n => Math.min(20, n + 1))}
-                      aria-label="Aumentar"
+                      aria-label="Increase"
                     >
                       +
                     </button>
@@ -109,7 +109,7 @@ function App() {
                     style={{ padding: '18px 40px', fontSize: '1.3rem', marginTop: '10px' }}
                     onClick={() => setAmigosConfirmado(true)}
                   >
-                    Continuar
+                    Continue
                   </button>
                 </div>
               ) : (
@@ -141,13 +141,13 @@ function App() {
                 ) : (
                   showMapaAmigos === 'error' ? (
                     <div style={{ marginTop: '-20px', color: '#ff4d4f', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                      <h2 style={{ color: '#ff4d4f', marginBottom: 18, marginTop: 40 }}>Error enviando datos al backend</h2>
-                      <p style={{ marginBottom: '18px', textAlign: 'center' }}>Por favor, inténtalo de nuevo más tarde.</p>
+                      <h2 style={{ color: '#ff4d4f', marginBottom: 18, marginTop: 40 }}>Error sending data to backend</h2>
+                      <p style={{ marginBottom: '18px', textAlign: 'center' }}>Please try again later.</p>
                     </div>
                   ) : (
                     <div style={{ marginTop: '-20px', color: '#e6f7ff', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                      <h3 style={{ textAlign: 'center', marginBottom: '0px', }}>¡Perfecto! Sois {numAmigos} personas.</h3>
-                      <p style={{ marginBottom: '18px', textAlign: 'center' }}>Selecciona en el mapa el área de interés o visualiza el punto de encuentro.</p>
+                      <h3 style={{ textAlign: 'center', marginBottom: '0px', }}>Perfect! You are {numAmigos} people.</h3>
+                      <p style={{ marginBottom: '18px', textAlign: 'center' }}>Select the area of interest on the map or visualize the meeting point.</p>
                       <MapaAmigos />
                     </div>
                   )

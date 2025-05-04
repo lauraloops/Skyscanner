@@ -3,11 +3,12 @@
 import React, { useState } from 'react';
 
 const VIBES = [
-  'Fiesta',
-  'Naturaleza',
-  'Cultura',
-  'Playa',
-  'Comida',
+  'Nightlife and Entertainment',
+  'Underrated Destinations',
+  'Art and Culture',
+  'Beach',
+  'Great Food',
+  'Outdoor Adventures',
 ];
 
 export default function Vibes({ onSelected }) {
@@ -51,6 +52,7 @@ export default function Vibes({ onSelected }) {
       <div style={{ display: 'flex', gap: 32, justifyContent: 'center' }}>
         <button
           onClick={() => handleAnswer(false)}
+          className="vibes-no-btn"
           style={{
             background: 'linear-gradient(135deg, #22304a 0%, #1a2636 100%)',
             color: '#fff',
@@ -60,7 +62,6 @@ export default function Vibes({ onSelected }) {
             fontWeight: 700,
             padding: '18px 36px',
             cursor: 'pointer',
-            boxShadow: '0 2px 12px #ff3b3b22',
             transition: 'background 0.2s, color 0.2s',
           }}
         >
@@ -68,6 +69,7 @@ export default function Vibes({ onSelected }) {
         </button>
         <button
           onClick={() => handleAnswer(true)}
+          className="vibes-yes-btn"
           style={{
             background: 'linear-gradient(135deg, #00eaff 0%, #00aaff 100%)',
             color: '#22304a',
@@ -77,15 +79,14 @@ export default function Vibes({ onSelected }) {
             fontWeight: 700,
             padding: '18px 36px',
             cursor: 'pointer',
-            boxShadow: '0 2px 12px #00eaff44',
             transition: 'background 0.2s, color 0.2s',
           }}
         >
-          Sí
+          Yes
         </button>
       </div>
       <div style={{ marginTop: 38, color: '#e6f7ff', fontSize: 17, opacity: 0.7 }}>
-        ¿Te interesa este vibe para tu viaje?
+        Are you interested in this vibe for your trip?
       </div>
     </div>
   );

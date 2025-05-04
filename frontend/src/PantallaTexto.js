@@ -39,9 +39,9 @@ export default function PantallaTexto({ onVolver }) {
   }
   return (
     <div className="full-screen" style={{ maxWidth: 600, margin: 'auto', paddingTop: 40 }}>
-      <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Introduce tu texto</h2>
+      <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Introduce your text</h2>
       <textarea
-        placeholder="Escribe aquí..."
+        placeholder="Write here..."
         value={texto}
         onChange={e => setTexto(e.target.value)}
         rows={5}
@@ -65,20 +65,20 @@ export default function PantallaTexto({ onVolver }) {
         onClick={handleGuardar}
         disabled={loading || !texto.trim()}
       >
-        {loading ? 'Guardando...' : 'Guardar texto'}
+        {loading ? 'Saving...' : 'Save text'}
       </button>
       <button
         className="right-btn"
         style={{ width: '100%', fontSize: 18, padding: '12px 0', marginBottom: 10, background: '#00eaff', color: '#22304a' }}
         onClick={() => setMostrarPresupuesto(true)}
       >
-        Elegir presupuesto
+        Choose budget
       </button>
       {error && (
         <div style={{ color: 'red', marginBottom: 16 }}>{error}</div>
       )}
       {guardado && (
-        <div style={{ color: 'green', marginBottom: 16 }}>¡Texto guardado correctamente!</div>
+        <div style={{ color: 'green', marginBottom: 16 }}>Text saved successfully!</div>
       )}
       {/* Botón Volver eliminado */}
     </div>
