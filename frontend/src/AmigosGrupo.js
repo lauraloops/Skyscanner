@@ -100,11 +100,11 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
     if (!joined) {
       return (
         <div className="full-screen" style={{ maxWidth: 500, margin: 'auto' }}>
-          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Unirse a un grupo</h2>
+          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Join group</h2>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
             <input
               type="text"
-              placeholder="Código del grupo"
+              placeholder="Group code"
               value={inputCode}
               onChange={e => setInputCode(e.target.value.toUpperCase())}
               style={{
@@ -153,7 +153,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
     if (selectingOrigin) {
       return (
         <div className="full-screen" style={{ maxWidth: 1200, margin: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Selecciona tu ciudad de origen en el mapa</h2>
+          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Select your origin city in the map</h2>
           <div style={{ width: '100%' }}>
             <MapaAmigos onSelect={handleSelectOrigin} />
           </div>
@@ -164,7 +164,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
     if (selectingVibes) {
       return (
         <div className="full-screen" style={{ maxWidth: 500, margin: 'auto' }}>
-          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Selecciona tus vibes</h2>
+          <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Select your vibes</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 18 }}>
             {vibesOptions.map(vibe => (
               <button
@@ -184,7 +184,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
             onClick={handleSaveVibes}
             disabled={myVibes.length === 0}
           >
-            Guardar preferencias
+            Save preferences
           </button>
           {/* Botón Volver eliminado */}
         </div>
@@ -194,20 +194,20 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
       <div className="full-screen" style={{ maxWidth: 500, margin: 'auto' }}>
         <h2 style={{ color: '#00aaff', marginBottom: 18 }}>¡Gracias, {name}!</h2>
         <div style={{ color: '#e6f7ff', marginBottom: 18 }}>
-          Esperando a que los demás seleccionen su origen y vibes...
+          Waiting for others to select their origin and vibes...
         </div>
-        <div style={{ color: '#e6f7ff', marginBottom: 8 }}>Orígenes seleccionados:</div>
+        <div style={{ color: '#e6f7ff', marginBottom: 8 }}>Selected origins:</div>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {Object.entries(origins).map(([n, o]) => (
             <li key={n} style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>{n}: {o}</li>
           ))}
         </ul>
-        <div style={{ color: '#e6f7ff', margin: '16px 0 8px 0' }}>Tus vibes seleccionadas:</div>
+        <div style={{ color: '#e6f7ff', margin: '16px 0 8px 0' }}>Your selected vibes:</div>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {Array.isArray(vibes[name]) && vibes[name].length > 0 ? (
             <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>{vibes[name].map(x => x.replace(/_/g, ' ')).join(', ')}</li>
           ) : (
-            <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No seleccionaste vibes</li>
+            <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No selected vibes</li>
           )}
         </ul>
         <button
@@ -219,7 +219,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
             }
           }}
         >
-          Usa tu creatividad
+          Use your creativity
         </button>
       </div>
     );
@@ -229,9 +229,9 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
   if (!joined && isCreator) {
     return (
       <div className="full-screen" style={{ maxWidth: 500, margin: 'auto' }}>
-        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Invita a tus amigos</h2>
+        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Invite your friends</h2>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-          <div style={{ fontSize: 18, marginBottom: 8, alignSelf: 'flex-start' }}>Código del grupo:</div>
+          <div style={{ fontSize: 18, marginBottom: 8, alignSelf: 'flex-start' }}>Group code:</div>
           <div style={{
             fontSize: 28,
             fontWeight: 700,
@@ -247,10 +247,10 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
             wordBreak: 'break-all',
             boxSizing: 'border-box',
           }}>{groupCode}</div>
-          <div style={{ fontSize: 16, color: '#e6f7ff', marginBottom: 16, alignSelf: 'flex-start' }}>Comparte este código con tus amigos para que se unan.</div>
+          <div style={{ fontSize: 16, color: '#e6f7ff', marginBottom: 16, alignSelf: 'flex-start' }}>Share this code with your friends to join.</div>
           <input
             type="text"
-            placeholder="Tu nombre"
+            placeholder="Your name"
             value={name}
             onChange={e => setName(e.target.value)}
             style={{
@@ -273,10 +273,10 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
           onClick={handleJoin}
           disabled={joined || !name}
         >
-          {joined ? '¡Ya estás en el grupo!' : 'Entrar en el grupo'}
+          {joined ? '¡You are in the group!' : 'Join the group'}
         </button>
         <div style={{ marginTop: 24, width: '100%' }}>
-          <div style={{ fontSize: 18, color: '#e6f7ff', marginBottom: 8 }}>Participantes ({participants.length}/{numAmigos}):</div>
+          <div style={{ fontSize: 18, color: '#e6f7ff', marginBottom: 8 }}>Participants ({participants.length}/{numAmigos}):</div>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             {participants.map((p, i) => (
               <li key={i} style={{ fontSize: 18, color: '#00eaff', marginBottom: 4 }}>{p}</li>
@@ -288,7 +288,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
             style={{ background: 'none', border: 'none', color: '#00aaff', textDecoration: 'underline', cursor: 'pointer', fontSize: 15 }}
             onClick={() => setIsCreator(false)}
           >
-            ¿Eres un amigo? Unirse a un grupo
+            You are not the creator? Click here to join as a friend
           </button>
           {/* Botón Volver eliminado */}
         </div>
@@ -298,7 +298,7 @@ export default function AmigosGrupo({ numAmigos, onAllJoined, setPantallaTexto }
   if (selectingOrigin) {
     return (
       <div className="full-screen" style={{ maxWidth: 1200, margin: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Selecciona tu ciudad de origen en el mapa</h2>
+        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Select your origin city in the map</h2>
         <div style={{ width: '100%' }}>
           <MapaAmigos onSelect={handleSelectOrigin} />
         </div>
@@ -334,11 +334,12 @@ function VibesScreen({ onSave }) {
   const [selected, setSelected] = useState([]);
   // Las opciones deben coincidir con el orden de Vibes.js
   const vibesOptions = [
-    'Fiesta',
-    'Naturaleza',
-    'Cultura',
-    'Playa',
-    'Comida',
+    'Nightlife and Entertainment',
+    'Underrated Destinations',
+    'Art and Culture',
+    'Beach',
+    'Great Food',
+    'Outdoor Adventures',
   ];
   // selected es un array de booleanos o números (10/0), lo convertimos a nombres
   const getSelectedVibesNames = () => {
@@ -358,7 +359,7 @@ function VibesScreen({ onSave }) {
           onClick={() => onSave(getSelectedVibesNames())}
           disabled={getSelectedVibesNames().length === 0}
         >
-          Guardar preferencias
+          Save vibes
         </button>
         {/* Botón Volver eliminado */}
       </div>
@@ -367,22 +368,22 @@ function VibesScreen({ onSave }) {
 }
     return (
       <div className="full-screen" style={{ maxWidth: 500, margin: 'auto' }}>
-        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>¡Gracias, {name}!</h2>
+        <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Thanks, {name}!</h2>
         <div style={{ color: '#e6f7ff', marginBottom: 18 }}>
-          Esperando a que los demás seleccionen su origen y vibes...
+          Waiting for others to select their origin and vibes...
         </div>
-        <div style={{ color: '#e6f7ff', marginBottom: 8 }}>Orígenes seleccionados:</div>
+        <div style={{ color: '#e6f7ff', marginBottom: 8 }}>Selected origins:</div>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {Object.entries(origins).map(([n, o]) => (
             <li key={n} style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>{n}: {o}</li>
           ))}
         </ul>
-        <div style={{ color: '#e6f7ff', margin: '16px 0 8px 0' }}>Tus vibes seleccionadas:</div>
+        <div style={{ color: '#e6f7ff', margin: '16px 0 8px 0' }}>Your selected vibes:</div>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {misVibesNombres.length > 0 ? (
             <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>{misVibesNombres.join(', ')}</li>
           ) : (
-            <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No seleccionaste vibes</li>
+            <li style={{ fontSize: 17, color: '#00eaff', marginBottom: 4 }}>No selected vibes</li>
           )}
         </ul>
         <button
@@ -394,7 +395,7 @@ function VibesScreen({ onSave }) {
             }
           }}
         >
-          Usa tu creatividad
+          Use your creativity
         </button>
       </div>
     );

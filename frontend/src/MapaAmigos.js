@@ -171,13 +171,13 @@ function MapaAmigos({ onSelect }) {
   }
 
   // Título dinámico
-  let titulo = 'Países';
+  let titulo = 'Countries';
   if (nivel === 'ciudad' && paisSel) {
-    titulo = `Ciudades de ${paisSel}`;
+    titulo = `Cities of ${paisSel}`;
   } else if (ciudadOrigen) {
-    titulo = `Ciudad de origen seleccionada: ${ciudadOrigen}`;
+    titulo = `Selected Origin City: ${ciudadOrigen}`;
   } else {
-    titulo = 'Países';
+    titulo = 'Countries';
   }
 
   return (
@@ -242,7 +242,7 @@ function MapaAmigos({ onSelect }) {
                   display: 'block',
                   letterSpacing: 0.1,
                 }}>
-                  Origen Seleccionado: {ciudadOrigen}
+                  Selected Origin: {ciudadOrigen}
                 </span>
               </div>
             )}
@@ -271,7 +271,7 @@ function MapaAmigos({ onSelect }) {
               </span>
               <input
                 type="text"
-                placeholder="Buscar país o ciudad..."
+                placeholder="Search country and city..."
                 value={search}
                 onChange={handleSearchChange}
                 style={{

@@ -6,6 +6,7 @@ const PresupuestoSlider = ({ max = 5000, step = 50, onBack }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [showGracias, setShowGracias] = useState(false);
 
   const handleChange = (e) => {
     setValue(Number(e.target.value));
@@ -24,6 +25,10 @@ const PresupuestoSlider = ({ max = 5000, step = 50, onBack }) => {
       });
       if (!response.ok) throw new Error("Error en la petición");
       setSuccess(true);
+      // Espera 1.2s y muestra pantalla de gracias
+      setTimeout(() => {
+        setShowGracias(true);
+      }, 1200);
     } catch (err) {
       setError("Error al guardar el presupuesto");
     } finally {
@@ -31,11 +36,19 @@ const PresupuestoSlider = ({ max = 5000, step = 50, onBack }) => {
     }
   };
 
+  if (showGracias) {
+    return (
+      <div className="full-screen" style={{ maxWidth: 600, margin: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <h2 style={{ color: '#00aaff', marginBottom: 24, fontSize: 32, textAlign: 'center' }}>Thank you!</h2>
+        <p style={{ color: '#e6f7ff', fontSize: 22, textAlign: 'center', marginBottom: 0 }}>You will receive your final destination shortly.</p>
+      </div>
+    );
+  }
   return (
     <div style={{ maxWidth: 480, margin: '40px auto', background: '#f1f5ff', borderRadius: 18, boxShadow: '0 2px 16px #00aaff22', padding: 32 }}>
-      <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Presupuesto máximo</h2>
+      <h2 style={{ color: '#00aaff', marginBottom: 18 }}>Max Budget</h2>
       <div style={{ marginBottom: 24 }}>
-        <label style={{ fontWeight: 600, fontSize: 18 }}>Máximo (€{value})</label>
+        <label style={{ fontWeight: 600, fontSize: 18 }}>Max (€{value})</label>
         <input
           type="range"
           min={0}
@@ -55,10 +68,10 @@ const PresupuestoSlider = ({ max = 5000, step = 50, onBack }) => {
         onClick={handleBuscar}
         disabled={loading}
       >
-        {loading ? 'Buscando...' : 'Iniciar búsqueda'}
+        {loading ? 'Searching...' : 'Start Search'}
       </button>
       {success && (
-        <div style={{ color: 'green', marginTop: 12 }}>¡Presupuesto enviado correctamente!</div>
+        <div style={{ color: 'green', marginTop: 12 }}>Budget sent successfully!</div>
       )}
       {error && (
         <div style={{ color: 'red', marginTop: 12 }}>{error}</div>
@@ -69,7 +82,7 @@ const PresupuestoSlider = ({ max = 5000, step = 50, onBack }) => {
           style={{ width: '100%', fontSize: 18, padding: '12px 0', marginTop: 10 }}
           onClick={onBack}
         >
-          Volver
+          Return
         </button>
       )}
     </div>
